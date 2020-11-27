@@ -245,7 +245,7 @@ $_.min 0
 EOF
 	}
     print <<'EOF';
-multigraph percentage_used
+multigraph nvme_percentage_used
 graph_title NVME Percentage used
 graph_order $sn_list
 graph_vlabel percent used
@@ -286,7 +286,7 @@ EOF
         my $cycles = $info->{smart}->{data_units_written} * 512_000 / $info->{capacity};
         print "$_.value $cycles\n";
     }
-    print "multigraph percentage_used\n";
+    print "multigraph nvme_percentage_used\n";
     for (@sn) {
         my $info = $list->{$_};
 
