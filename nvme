@@ -249,7 +249,7 @@ multigraph nvme_percentage_used
 graph_title NVME Percentage used
 graph_order $sn_list
 graph_vlabel percent used
-graph_args --logarithmic
+graph_scale no
 graph_category disk
 graph_info How much estimated life used
 EOF
